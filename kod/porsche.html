@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>porsche</title>
+</head>
+<body>
+    <div id="head">
+        <nav>
+            <ul id="navigation">
+                <li><a href="ferrari.html" class="navigation">Ferrari</a></li>
+                <li><a href="porsche.html" class="navigation">Porsche</a></li>
+                <li><a href="bugatti.html" class="navigation">Bugatti</a></li>
+                <li><a href="lamborghini.html" class="navigation">Lamborghini</a></li>
+            </ul>
+            <a id="super_cars" href="../index.html">SUPERSAMOCHODY</a>
+            <img src="../grafiki/logo3.png" alt="Loga samochdów" id="loga">
+
+
+        </nav>
+        <header>
+            <h1>PORSCHE</h1>
+        </header>
+        <img src="../grafiki/porche.png" alt="logo porsche" id="logo_l_p"><img src="../grafiki/porche.png" alt="logo porsche" id="logo_r_p">
+    </div>
+
+    <div id="panel_1">
+        <h3>Historia</h3>
+        <br>
+        <p>
+            25 kwietnia 1931 roku Ferdinand Porsche założył firmę początkowo konstruującą samochody, a następnie z nakazu Adolfa Hitlera pojazdy wojskowe i pancerne dla III Rzeszy w czasie II wojny światowej konkurując z firmą Henschel.
+        </p>
+        <br>
+        <p>
+            Logo firmy Porsche, w kształcie herbu, które pozostało niezmienione do czasów współczesnych, w centralnej części ma umieszczonego biegnącego konia, który został zapożyczony z herbu miasta Stuttgart, w którym mieści się przedsiębiorstwo.
+        </p>
+        <br>
+        <p>
+            W 1947 roku przedsiębiorstwo przejął syn Ferdinanda – Ferry Porsche. Pierwszy model Porsche 356 z roku 1948 zawierał wiele części z Volkswagena Garbusa, w tym silnik (chłodzony powietrzem 4-cylindrowy boxer) oraz amortyzatory. Autorem projektu nadwozia był Erwin Komenda, który już poprzednio zaprojektował wygląd VW Garbusa. Model 356 w toku produkcji był modernizowany, wiele części Volkswagena zastąpiono własnymi konstrukcjami. Ostatnie wersje modelu 356 miały silnik własnej konstrukcji firmy Porsche.
+        </p>
+        <br>
+        <p>
+            W 1963 roku zaprezentowano model Porsche 911. Był to wóz sportowy z sześciocylindrowym silnikiem własnej konstrukcji umieszczonym z tyłu. To auto stało się światowym przebojem firmy Porsche, osiągając sukcesy nie tylko na torze wyścigowym, lecz przede wszystkim w sprzedaży.
+        </p>
+        <br>
+        <p>
+            W połowie lat 70 XX wieku powstała koncepcja stworzenia podziału na małe modele czterocylindrowe, średnie sześciocylindrowe i duże z silnikiem o ośmiu cylindrach. Mały model 924 pojawił się w 1976 roku a rok później duży 928. Polityka ta była kontynuowana aż do roku 1995, kiedy to po trzech latach zakończono produkcję Porsche 968 m.in. ze względu na niewielki popyt. Samochód poza stylistyką przypominającą Porsche 944 krytykowano za małą liczbę cylindrów.
+        </p>
+        <br>
+    </div>
+    <div id="panel_2">
+        <h3>Porsche Lifestyle</h3>
+        <br>
+        <p>
+            Porsche od początku istnienia promuje lajfstajlowy wizerunek marki. Przejawia się to zarówno w organizacji klubów użytkowników pojazdów wyprodukowanych przez Porsche, jak i promocji produktów firmy nie związanych z motoryzacją. We współpracy z założoną przez Ferdinanda Porsche firmą PorscheDesign produkowane są zarówno gadżety dla kierowców i wielbicieli marki, jak i projektowane są przedmioty produkowane z logo Porsche przez inne firmy.
+        </p>
+        <br>
+        <p>
+            Równocześnie w większości krajów istnieją Porsche Kluby użytkowników i fanów samochodów Porsche. Polski klub – Porsche Club Poland z siedzibą w Lublinie istnieje od 2000 roku. PCP prowadzi aktywną działalność zarówno sportową, jak i promocyjną wśród użytkowników i fanów marki. Honorowymi członkami PCP są znani, wieloletni użytkownicy samochodów Porsche – m.in. Maryla Rodowicz i Sobiesław Zasada. 
+        </p>
+    </div>
+    <div id="panel_3">
+        <div id="a_l">
+            <img src="../grafiki/left.png" alt="strzałka w lewo" id="l">
+        </div>
+        <div id="obraz_m">
+            <img src="../grafiki/porsche/porsche_1.jpg" alt="samochód porsche" id="obraz_porsche">
+        </div>
+        <div id="a_r">
+            <img src="../grafiki/right.png" alt="strzałka w prawo" id="r">
+        </div>
+    </div>
+    <footer>
+        <p id="par-3"></p>
+    </footer>
+    <script>
+        const btnf = document.getElementById('a_r');
+        const btnr = document.getElementById('a_l');
+        const par3 = document.getElementById('par-3');
+        par3.innerHTML = "Radosław Wójcicki&#x2122 " + new Date().getFullYear();
+
+        function photo () {
+            const img_f_s = document.getElementById('obraz_porsche').src;
+            const img_f = document.getElementById('obraz_porsche');
+
+            if (img_f_s.includes('porsche_1') === true) {
+                img_f.src = '../grafiki/porsche/porsche_2.jpg';
+            } else if (img_f_s.includes('porsche_2') === true) {
+                img_f.src = '../grafiki/porsche/porsche_3.jpg';
+            } else if (img_f_s.includes('porsche_3') === true) {
+                img_f.src = '../grafiki/porsche/porsche_4.jpg';
+            } else if (img_f_s.includes('porsche_4') === true) {
+                img_f.src = '../grafiki/porsche/porsche_5.jpg';
+            } else if (img_f_s.includes('porsche_5') === true) {
+                img_f.src = '../grafiki/porsche/porsche_6.jpg';
+            } else if (img_f_s.includes('porsche_6') === true) {
+                img_f.src = '../grafiki/porsche/porsche_7.jpg';
+            } else if (img_f_s.includes('porsche_7') === true) {
+                img_f.src = '../grafiki/porsche/porsche_8.jpg';
+            } else if (img_f_s.includes('porsche_8') === true) {
+                img_f.src = '../grafiki/porsche/porsche_9.jpg';
+            } else if (img_f_s.includes('porsche_9') === true) {
+                img_f.src = '../grafiki/porsche/porsche_10.jpg';
+            } else if (img_f_s.includes('porsche_10') === true) {
+                img_f.src = '../grafiki/porsche/porsche_1.jpg';
+            }
+        }
+
+        function photo_reverse () {
+            const img_f_s = document.getElementById('obraz_porsche').src;
+            const img_f = document.getElementById('obraz_porsche');
+
+            if (img_f_s.includes('porsche_10') === true) {
+                img_f.src = '../grafiki/porsche/porsche_9.jpg';
+            } else if (img_f_s.includes('porsche_9') === true) {
+                img_f.src = '../grafiki/porsche/porsche_8.jpg';
+            } else if (img_f_s.includes('porsche_8') === true) {
+                img_f.src = '../grafiki/porsche/porsche_7.jpg';
+            } else if (img_f_s.includes('porsche_7') === true) {
+                img_f.src = '../grafiki/porsche/porsche_6.jpg';
+            } else if (img_f_s.includes('porsche_6') === true) {
+                img_f.src = '../grafiki/porsche/porsche_5.jpg';
+            } else if (img_f_s.includes('porsche_5') === true) {
+                img_f.src = '../grafiki/porsche/porsche_4.jpg';
+            } else if (img_f_s.includes('porsche_4') === true) {
+                img_f.src = '../grafiki/porsche/porsche_3.jpg';
+            } else if (img_f_s.includes('porsche_3') === true) {
+                img_f.src = '../grafiki/porsche/porsche_2.jpg';
+            } else if (img_f_s.includes('porsche_2') === true) {
+                img_f.src = '../grafiki/porsche/porsche_1.jpg';
+            } else if (img_f_s.includes('porsche_1') === true) {
+                img_f.src = '../grafiki/porsche/porsche_10.jpg';
+            }
+        }
+
+        btnf.addEventListener('click', photo);
+        btnr.addEventListener('click', photo_reverse);
+    </script>
+</body>
+</html>

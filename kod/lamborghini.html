@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>lamborghini</title>
+</head>
+<body>
+    <div id="head">
+        <nav>
+            <ul id="navigation">
+                <li><a href="ferrari.html" class="navigation">Ferrari</a></li>
+                <li><a href="porsche.html" class="navigation">Porsche</a></li>
+                <li><a href="bugatti.html" class="navigation">Bugatti</a></li>
+                <li><a href="lamborghini.html" class="navigation">Lamborghini</a></li>
+            </ul>
+            <a id="super_cars" href="../index.html">SUPERSAMOCHODY</a>
+            <img src="../grafiki/logo3.png" alt="Loga samochdów" id="loga">
+
+
+        </nav>
+        <header>
+            <h1>LAMBORGHINI</h1>
+        </header>
+        <img src="../grafiki/lamborghini.png" alt="logo lamborghini" id="logo_l_p"><img src="../grafiki/lamborghini.png" alt="logo lamborghini" id="logo_r_p">
+    </div>
+
+    <div id="panel_1">
+        <h3>Historia</h3>
+        <br>
+        <p>
+            Mówi się, że powstanie samochodów Lamborghini wynikło z dyskusji pomiędzy miłośnikiem wozów sportowych Ferruccim Lamborghinim (1916–1993) a Enzo Ferrarim. Lamborghini, który wówczas z powodzeniem produkował wyłącznie traktory, był niezadowolony ze swego samochodu Ferrari i zaproponował Enzo Ferrariemu wprowadzenie zmian konstrukcyjnych. Ten oburzony uwagami „jakiegoś traktorzysty” zakwestionował kompetencje Lamborghiniego. Wobec tego Lamborghini postanowił udowodnić mu kto jest lepszy i już po roku zademonstrował swój legendarny 12-cylindrowy model Lamborghini 350 GTV, wyraźnie przewyższający samochody marki Ferrari. W 1964 roku powstało 350 GT. Bezpośrednim i prawie nieuniknionym odgałęzieniem 350 GT, zostało zbudowanych, był 400 GT. Jego silnik został powiększony do czterolitrowego modelu i zawierał pierwszą skrzynię biegów zaprojektowaną przez Lamborghini. Bazując początkowo na dwumiejscowym nadwoziu, które później przerobiono na 400 GT 2 + 2 z dwoma okazjonalnymi siedzeniami za dwoma zwykłymi, 400 GT osiągnęło ogólną produkcję 273 sztuk.
+        </p>
+        <br>
+        <p>
+            W 1966 pojawił się model Miura, dzięki któremu firma zyskała sławę na całym świecie. Mimo że samochód ten jest narowisty i trudny w prowadzeniu, to jego miłośnikom w niczym to nie przeszkadza.
+        </p>
+        <br>
+        <p>
+            W 1971 na salonie samochodowym w Genewie pokazano prototyp Countach, zaprojektowany przez Marcello Gandiniego z firmy Bertone. W 1974 rozpoczęła się seryjna produkcja. Ostro cięte, niskie nadwozie z unoszonymi do góry drzwiami i wlotami powietrza nadało mu niepowtarzalny charakter. Model ten, produkowany 15 lat pozwolił firmie i jej kolejnym właścicielom przetrwać ciężkie czasy.
+        </p>
+        <br>
+        <p>
+            Ferruccio Lamborghini sprzedał dział zajmujący się produkcją aut sportowych już w 1972. Kolejnymi właścicielami byli Georges-Henri Rossetti i René Leimer, następnie zarządzający firmą Patrick Mimran, który w 1987 sprzedał udziały firmie Chrysler, która sprzedała ją w 1994 indonezyjskiej firmie Megatech. W 1998 Automobili Lamborghini S.p.A po raz ostatni, jak do tej pory, zmieniło właściciela, którym zostało Audi AG.
+        </p>
+
+    </div>
+    <div id="panel_2">
+        <h3>Modena</h3>
+        <br>
+        <p>
+            Zespół po raz pierwszy zaprezentował się jako team meksykański pod nazwą GLAS na początku 1990 r., z byłym kierowcą teamów Alfa Romeo i Spirit – Mauro Baldim i kontraktem na silniki V12 od Lamborghini. Jednak meksykańscy inwestorzy zniknęli, a Lamborghini postanowiło uratować zespół. Siedziba została przeniesiona do Modeny we Włoszech  i zespół dołączył do stawki na sezon 1991. Modena Team, po zastrzyku gotówki od Lamborghini, była całkowicie niezależna.
+        </p>
+        <br>
+        <p>
+            W połowie sezonu zespół był w poważnych kłopotach finansowych. Lamborghini odmówiło udostępnienia jakichkolwiek funduszy i choć zespół mógł przejść przedkwalifikacje, nie mógł dokonać żadnego postępu. Larini wziął udział w jeszcze czterech wyścigach: wypadając z GP Niemiec, dojeżdżając na 16-tej pozycji na Węgrzech oraz we Włoszech i zderzając się z Jeanem Alesi w Australii. Mimo tego zespół zniknął przed sezonem 1992.
+        </p>
+
+    </div>
+    <div id="panel_3">
+        <div id="a_l">
+            <img src="../grafiki/left.png" alt="strzałka w lewo" id="l">
+        </div>
+        <div id="obraz_m">
+            <img src="../grafiki/lamborghini/lambo_1.jpg" alt="samochód lamborghini" id="obraz_lamborghini">
+        </div>
+        <div id="a_r">
+            <img src="../grafiki/right.png" alt="strzałka w prawo" id="r">
+        </div>
+    </div>
+    <footer>
+        <p id="par-3"></p>
+    </footer>
+    <script>
+        const btnf = document.getElementById('a_r');
+        const btnr = document.getElementById('a_l');
+        const par3 = document.getElementById('par-3');
+        par3.innerHTML = "Radosław Wójcicki&#x2122 " + new Date().getFullYear();
+
+        function photo () {
+            const img_f_s = document.getElementById('obraz_lamborghini').src;
+            const img_f = document.getElementById('obraz_lamborghini');
+
+            if (img_f_s.includes('lambo_1') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_2.jpg';
+            } else if (img_f_s.includes('lambo_2') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_3.jpg';
+            } else if (img_f_s.includes('lambo_3') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_4.jpg';
+            } else if (img_f_s.includes('lambo_4') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_5.jpg';
+            } else if (img_f_s.includes('lambo_5') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_6.jpg';
+            } else if (img_f_s.includes('lambo_6') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_7.jpg';
+            } else if (img_f_s.includes('lambo_7') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_8.jpg';
+            } else if (img_f_s.includes('lambo_8') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_9.jpg';
+            } else if (img_f_s.includes('lambo_9') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_10.jpg';
+            } else if (img_f_s.includes('lambo_10') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_1.jpg';
+            }
+        }
+
+        function photo_reverse () {
+            const img_f_s = document.getElementById('obraz_lamborghini').src;
+            const img_f = document.getElementById('obraz_lamborghini');
+
+            if (img_f_s.includes('lambo_10') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_9.jpg';
+            } else if (img_f_s.includes('lambo_9') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_8.jpg';
+            } else if (img_f_s.includes('lambo_8') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_7.jpg';
+            } else if (img_f_s.includes('lambo_7') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_6.jpg';
+            } else if (img_f_s.includes('lambo_6') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_5.jpg';
+            } else if (img_f_s.includes('lambo_5') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_4.jpg';
+            } else if (img_f_s.includes('lambo_4') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_3.jpg';
+            } else if (img_f_s.includes('lambo_3') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_2.jpg';
+            } else if (img_f_s.includes('lambo_2') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_1.jpg';
+            } else if (img_f_s.includes('lambo_1') === true) {
+                img_f.src = '../grafiki/lamborghini/lambo_10.jpg';
+            }
+        }
+
+        btnf.addEventListener('click', photo);
+        btnr.addEventListener('click', photo_reverse);
+    </script>
+</body>
+</html>
