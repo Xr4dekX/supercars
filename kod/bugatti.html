@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/style.css">
+    <title>bugatti</title>
+</head>
+<body>
+    <div id="head">
+        <nav>
+            <ul id="navigation">
+                <li><a href="ferrari.html" class="navigation">Ferrari</a></li>
+                <li><a href="porsche.html" class="navigation">Porsche</a></li>
+                <li><a href="bugatti.html" class="navigation">Bugatti</a></li>
+                <li><a href="lamborghini.html" class="navigation">Lamborghini</a></li>
+            </ul>
+            <a id="super_cars" href="../index.html">SUPERSAMOCHODY</a>
+            <img src="../grafiki/logo3.png" alt="Loga samochdów" id="loga">
+
+
+        </nav>
+        <header>
+            <h1>BUGATTI</h1>
+        </header>
+        <img src="../grafiki/bugatti_logo.png" alt="logo bugatti" id="logo_l_b"><img src="../grafiki/bugatti_logo.png" alt="logo bugatti" id="logo_r_b">
+    </div>
+
+    <div id="panel_1">
+        <h3>Historia</h3>
+        <br>
+        <p>
+            Przedsiębiorstwo Bugatti założył Ettore Bugatti. Urodził się on w Mediolanie jako potomek włoskiej rodziny artystycznej, który osiadł w mieście Molsheim w Alzacji, gdzie poświęcił się pracom nad autorskimi samochodami i silnikami. Gdy jego przedsięwzięcie rozpoczęło działalność w 1909 roku, Molsheim wraz całym regionem było częścią Cesarstwa Niemieckiego - zmianie uległo to 9 lat później, gdy po I wojnie światowej na mocy Traktatu wersalskiego cała Alzacja-Lotaryngia weszła w skład III Republiki Francuskiej.
+        </p>
+        <br>
+        <p>
+            Bugatti w początkowych latach działalności rozwijało zarówno drogowe samochody sportowe, jak i konstrukcje przeznaczone stricte do poruszania się w wyścigach. Przełomowym momentem w historii firmy był wyścig Grand Prix Brescii w 1921 roku, kiedy to bolidy Bugatti zapewniły zwycięstwo poprzez zajęcie pierwszych 4 miejsc. Kolejnym ważnym momentem w historii firmy była seria zwycięstw w wyścigach samochodowych zapoczątkowana przy pomocy bolidu T35 w 1925 roku, które przez resztę dekady zdobywały co roku tytuły. Oprócz konstrukcji wyścigowych, Bugatti na przełomie lat 20. i 30. XX wieku koncentrowało się także na budowie samochodów luksusowych - ważnym momentem była prezentacja limuzyny Royale w 1927 roku, która wyróżniała się ponad
+        </p>
+        <br>
+        <p>
+            Historię Bugatti przerwał wybuch II wojny światowej w 1939 roku, które rok później zakończyło produkcję swoich dotychczasowych konstrukcji. Kolejną komplikacja nadeszła dwa lata po zakończeniu konfliktu, gdy w 1947 roku zmarł założyciel Ettore Bugatti. Marazm przerwano na początku lat 50. XX wieku, kiedy to spadkobiercy Bugatti z zaangażowaniem włoskich konstruktorów doprowadzili do wprowadzenia na rynek luksusowej limuzyny Type 101, zbudowanej ostatecznie jedynie w mniej niż 10 sztuakch. W kolejnych latach Bugatti pracowało jeszcze nad lekkim samochodem sportowym Bugatti Type 252, które nie wykroczyło poza fazę prototypu i pozostało ostatnią konstrukcją przedsiębiorstwa. W 1963 roku Bugatti zostało kupione i włączone w strukrurę hiszpańskiego Hispano-Suiza.
+        </p>
+    </div>
+    <div id="panel_2">
+        <h3>Bugatti - Wyścigi</h3>
+        <br>
+        <p>
+            Bugatti F1 – francuski zespół i konstruktor Formuły 1, uczestnik Grand Prix Francji 1956. Kierowcą Automobiles Bugatti był Maurice Trintignant. W 1995 roku miały miejsce niemające pokrycia w rzeczywistości plotki o powrocie Bugatti do Formuły 1.
+        </p>
+        <br>
+        <br>
+        <h2>Bugatti Bolide</h2>
+        <br>
+        <p>
+            W październiku 2020 roku Bugatti przedstawiło kolejny model specjalny zbudowany w ramach polityki rozbudowy portfolio, podobnie jak wcześniejsze konstrukcje Divo, La Voiture Noire i Centodieci powstając w oparciu o podzespoły techniczne głównego modelu Chiron. W przeciwieństwie do dotychczasowych konstrukcji Bugatti, model Bolide zamiast luksusowo-sportowego zyskał stricte wyczynowy charakter samochodu wyścigowego.
+        </p>
+    </div>
+    <div id="panel_3">
+        <div id="a_l">
+            <img src="../grafiki/left.png" alt="strzałka w lewo" id="l">
+        </div>
+        <div id="obraz_m">
+            <img src="../grafiki/bugatti/bugatti_1.jpg" alt="samochód bugatti" id="obraz_bugatti">
+        </div>
+        <div id="a_r">
+            <img src="../grafiki/right.png" alt="strzałka w prawo" id="r">
+        </div>
+    </div>
+    <footer>
+        <p id="par-3"></p>
+    </footer>
+    <script>
+        const btnf = document.getElementById('a_r');
+        const btnr = document.getElementById('a_l');
+        const par3 = document.getElementById('par-3');
+        par3.innerHTML = "Radosław Wójcicki&#x2122 " + new Date().getFullYear();
+
+        function photo () {
+            const img_f_s = document.getElementById('obraz_bugatti').src;
+            const img_f = document.getElementById('obraz_bugatti');
+
+            if (img_f_s.includes('bugatti_1') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_2.jpg';
+            } else if (img_f_s.includes('bugatti_2') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_3.jpg';
+            } else if (img_f_s.includes('bugatti_3') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_4.jpg';
+            } else if (img_f_s.includes('bugatti_4') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_5.jpg';
+            } else if (img_f_s.includes('bugatti_5') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_6.jpg';
+            } else if (img_f_s.includes('bugatti_6') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_7.jpg';
+            } else if (img_f_s.includes('bugatti_7') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_8.jpg';
+            } else if (img_f_s.includes('bugatti_8') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_9.jpg';
+            } else if (img_f_s.includes('bugatti_9') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_10.jpg';
+            } else if (img_f_s.includes('bugatti_10') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_1.jpg';
+            }
+        }
+
+        function photo_reverse () {
+            const img_f_s = document.getElementById('obraz_bugatti').src;
+            const img_f = document.getElementById('obraz_bugatti');
+
+            if (img_f_s.includes('bugatti_10') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_9.jpg';
+            } else if (img_f_s.includes('bugatti_9') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_8.jpg';
+            } else if (img_f_s.includes('bugatti_8') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_7.jpg';
+            } else if (img_f_s.includes('bugatti_7') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_6.jpg';
+            } else if (img_f_s.includes('bugatti_6') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_5.jpg';
+            } else if (img_f_s.includes('bugatti_5') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_4.jpg';
+            } else if (img_f_s.includes('bugatti_4') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_3.jpg';
+            } else if (img_f_s.includes('bugatti_3') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_2.jpg';
+            } else if (img_f_s.includes('bugatti_2') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_1.jpg';
+            } else if (img_f_s.includes('bugatti_1') === true) {
+                img_f.src = '../grafiki/bugatti/bugatti_10.jpg';
+            }
+        }
+
+        btnf.addEventListener('click', photo);
+        btnr.addEventListener('click', photo_reverse);
+    </script>
+</body>
+</html>

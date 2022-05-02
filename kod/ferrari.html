@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/style.css">
+    <title>ferrari</title>
+</head>
+<body id="ferrari">
+    <div id="head">
+        <nav>
+            <ul id="navigation">
+                <li><a href="ferrari.html" class="navigation">Ferrari</a></li>
+                <li><a href="porsche.html" class="navigation">Porsche</a></li>
+                <li><a href="bugatti.html" class="navigation">Bugatti</a></li>
+                <li><a href="lamborghini.html" class="navigation">Lamborghini</a></li>
+            </ul>
+            <a id="super_cars" href="../index.html">SUPERSAMOCHODY</a>
+            <img src="../grafiki/logo3.png" alt="Loga samochdów" id="loga">
+
+
+        </nav>
+        <header>
+            <h1>FERRARI</h1>
+        </header>
+        <img src="../grafiki/ferrari.png" alt="logo Ferrari" id="logo_l"><img src="../grafiki/ferrari.png" alt="logo Ferrari" id="logo_r">
+    </div>
+
+    <div id="panel_1">
+        <h3>Historia</h3>
+        <br>
+        <p>
+            Przedsiębiorstwo założone zostało w 1938 roku przez Enzo Ferrari, od 1947 roku produkuje pojazdy marki Ferrari. W latach 1969 do 2016 należało do koncernu Fiata. W ramach tego koncernu, Ferrari znajdowało się w grupie Ferrari Maserati, która była niezależna konstrukcyjnie od pozostałych marek koncernu. Od 3 stycznia 2016 jest własnością Exor N.V. - 22,91%, Piero Ferrari - 10% i prywatnych akcjonariuszy - 67,09%. Siedziba przedsiębiorstwa znajduje się w Maranello we Włoszech.
+        </p>
+        <br>
+        <p>
+            Enzo Ferrari od 1929 roku prowadził stajnię wyścigową o nazwie Scuderia Ferrari i osiągał znaczne sukcesy w wyścigach samochodowych. 1947 przyniósł z kolei debiut modelu Ferrari 125 S z silnikiem 1,5 litra V12 .  Pojazdy cywilne Ferrari, produkowane od 1947 roku, znane ze swego wyszukanego stylu z domu Pininfarina, były i są symbolem luksusu. Ferrari korzystał również z designu innych projektantów, a mianowicie byli to Scaglietti, Bertone i Vignale. Stosunkowo niewielkie silniki 8 i 12 cylindrowe w układzie V, odznaczające się wysokimi osiągami oraz specyficznym brzmieniem i piękny wygląd czynią wozy Ferrari obiektem pożądania.
+        </p>
+        <br>
+        <p>
+            W 2002 roku, kiedy sytuacja przedsiębiorstwa nie miała się najlepiej, Fiat sprzedał 34% akcji bankowi Mediobanca za 768 mln USD. We wrześniu 2006 roku Fiat odkupił 29% akcji i posiadał 85% udziałów. 10% należy do syna Enzo Ferrariego, a pozostałe 5% w 2005 roku odkupił Mubadala Investment Company od banku Mediobanca.
+        </p>
+        <br>
+        <h2>Ciekawostka</h2>
+        <br>
+        <p>
+            Ferrari 250 GTO Stirlinga Mossa, kupione w lutym 2012 roku, przez anonimowego kolekcjonera, jest najdroższym Ferrari w historii. Model ten produkowany był latach 1962–1964, a powstało zaledwie 33 sztuki. Do napędu służy jednostka V12 o pojemności 3,0 l i mocy 304 KM, co pozwala osiągnąć przyspieszenie od 0 do 100 km/h w ciągu 6,1 sek. i maksymalną prędkość ok. 280 km/h.
+        </p>
+        
+    </div>
+    <div id="panel_2">
+        <h3>Ferrari - Wyścigi</h3>
+        <br>
+        <p>
+            Scuderia Ferrari, popularna nazwa Gestione Sportiva – dział firmy Ferrari zajmujący się sportami motorowymi.
+Podczas gdy Ferrari zajmuje się klientami i prywatnymi zespołami, Scuderia Ferrari odpowiedzialna jest za fabryczną ekipę w Formule 1.
+Zespół zadebiutował w Formule 1 podczas drugiej rundy w historii Mistrzostw Świata - Grand Prix Monako w sezonie 1950 z modelem Tipo 125 F1. Ferrari jest tym samym najbardziej doświadczonym i utytułowanym zespołem w historii F1. Zespół wywalczył 16 tytułów w klasyfikacji konstruktorów oraz 15 w klasyfikacji kierowców. Kierowcami Ferrari są Carlos Sainz Jr. - od 2021 i Charles Leclerc - od 2019.
+
+        </p>
+    </div>
+    <div id="panel_3">
+        <div id="a_l">
+            <img src="../grafiki/left.png" alt="strzałka w lewo" id="l">
+        </div>
+        <div id="obraz_m">
+            <img src="../grafiki/ferrari/ferrari_1.jpg" alt="samochód ferrari" id="obraz_ferrari">
+        </div>
+        <div id="a_r">
+            <img src="../grafiki/right.png" alt="strzałka w prawo" id="r">
+        </div>
+    </div>
+    <footer>
+        <p id="par-3"></p>
+    </footer>
+    <script>
+        const par3 = document.getElementById('par-3');
+        const btnf = document.getElementById('a_r');
+        const btnr = document.getElementById('a_l');
+
+        par3.innerHTML = "Radosław Wójcicki&#x2122 " + new Date().getFullYear();
+
+        function photo () {
+            const img_f_s = document.getElementById('obraz_ferrari').src;
+            const img_f = document.getElementById('obraz_ferrari');
+
+            if (img_f_s.includes('ferrari_1') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_2.jpg';
+            } else if (img_f_s.includes('ferrari_2') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_3.jpg';
+            } else if (img_f_s.includes('ferrari_3') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_4.jpg';
+            } else if (img_f_s.includes('ferrari_4') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_5.jpg';
+            } else if (img_f_s.includes('ferrari_5') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_6.jpg';
+            } else if (img_f_s.includes('ferrari_6') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_7.jpg';
+            } else if (img_f_s.includes('ferrari_7') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_8.jpg';
+            } else if (img_f_s.includes('ferrari_8') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_9.jpg';
+            } else if (img_f_s.includes('ferrari_9') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_10.jpg';
+            } else if (img_f_s.includes('ferrari_10') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_1.jpg';
+            }
+        }
+
+        function photo_reverse () {
+            const img_f_s = document.getElementById('obraz_ferrari').src;
+            const img_f = document.getElementById('obraz_ferrari');
+
+            if (img_f_s.includes('ferrari_10') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_9.jpg';
+            } else if (img_f_s.includes('ferrari_9') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_8.jpg';
+            } else if (img_f_s.includes('ferrari_8') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_7.jpg';
+            } else if (img_f_s.includes('ferrari_7') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_6.jpg';
+            } else if (img_f_s.includes('ferrari_6') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_5.jpg';
+            } else if (img_f_s.includes('ferrari_5') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_4.jpg';
+            } else if (img_f_s.includes('ferrari_4') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_3.jpg';
+            } else if (img_f_s.includes('ferrari_3') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_2.jpg';
+            } else if (img_f_s.includes('ferrari_2') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_1.jpg';
+            } else if (img_f_s.includes('ferrari_1') === true) {
+                img_f.src = '../grafiki/ferrari/ferrari_10.jpg';
+            }
+        }
+
+        btnf.addEventListener('click', photo);
+        btnr.addEventListener('click', photo_reverse);
+    </script>
+</body>
+</html>
